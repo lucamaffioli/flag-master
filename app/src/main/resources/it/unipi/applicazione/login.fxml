@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToWidth="true" fitToHeight="true" styleClass="backColor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.applicazione.controller.LoginController">
+   <content>
+      <StackPane>
+         <children>
+            <BorderPane styleClass="backColor">
+            
+               <top>
+                  <HBox alignment="CENTER" style="-fx-padding: 10;">
+                     <children>
+                        <ImageView fitWidth="${loginVbox.width}" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </top>
+            
+               <center>
+                  <StackPane style="-fx-padding: 20;">
+                     <children>
+                        <VBox fx:id="loginVbox" alignment="CENTER" maxWidth="800.0" spacing="30.0" style="-fx-font-size: 24px;">
+                           <children>
+                              
+                              <Label text="Login">
+                                 <font>
+                                    <Font name="System Bold" size="40.0" />
+                                 </font>
+                              </Label>
+                              
+                              <TextField fx:id="usernameField" prefHeight="70.0" promptText="username" style="-fx-background-radius: 10; -fx-background-color: #f0f2f5;" />
+                              
+                              <PasswordField fx:id="passwordField" prefHeight="70.0" promptText="password" style="-fx-background-radius: 10; -fx-background-color: #f0f2f5;" />
+                              
+                              <Button fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" prefHeight="80.0" prefWidth="400.0" styleClass="greenButton" text="LOGIN" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </center>
+            
+               <bottom>
+                  <VBox fx:id="buttonVbox" alignment="CENTER" spacing="10.0" style="-fx-padding: 30;">
+                     <children>
+                        
+                        <Label fx:id="errorLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;" textFill="RED" visible="false" />
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToRegister" styleClass="blueButton" text="Sign up here">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" />
+                                 </VBox.margin>
+                              </Button>
+                                <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleInitialize" styleClass="redButton" text="Initialize DB" textFill="#000000fa" />
+                           </children>
+                        </VBox>
+                        
+                     </children>
+                  </VBox>
+               </bottom>
+            
+            </BorderPane>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

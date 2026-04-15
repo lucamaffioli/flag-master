@@ -1,0 +1,39 @@
+# --- JAVA, SPRING BOOT & MAVEN ---
+*.class
+*.jar
+*.war
+*.ear
+target/
+.mvn/wrapper/
+maven-unit-errors.log
+
+# --- JAVAFX SPECIFIC ---
+.settings/
+.classpath
+.project
+.factorypath
+*.jnlp
+*.iml
+
+# --- NETBEANS & IDE ---
+nbproject/private/
+nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+build/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.idea/
+.vscode/
+
+# --- LOGS & OS ---
+*.log
+.DS_Store
+Thumbs.db
+
+# --- DATABASE & TEMP ---
+bin/
+out/
+.env
+

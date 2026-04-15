@@ -1,0 +1,36 @@
+.greenButton{
+    -fx-padding: 10 40;
+    -fx-background-color: #4CAF50; 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold; 
+    -fx-background-radius: 20; 
+    -fx-cursor: hand; 
+    -fx-font-size: 36px; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0, 0, 4);
+}
+
+.blueButton{
+    -fx-padding: 10 40;
+    -fx-background-color: #2196F3; 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold; 
+    -fx-background-radius: 20; 
+    -fx-cursor: hand; 
+    -fx-font-size: 30px; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0, 0, 4);
+}
+
+.redButton{
+    -fx-padding: 10 40;
+    -fx-background-color: #E53935; 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold; 
+    -fx-background-radius: 20; 
+    -fx-cursor: hand; 
+    -fx-font-size: 24px; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0, 0, 4);
+}
+    
+.backColor {
+    -fx-background-color: #b4cce4;
+}
